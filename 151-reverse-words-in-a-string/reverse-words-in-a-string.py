@@ -3,5 +3,5 @@ class Solution:
         s=s.strip()
         words=s.split()
         words.reverse()
-        reversed_s=" ".join(words)
-        return reversed_s
+        # reversed_s=" ".join(words)
+        return " ".join(words)
