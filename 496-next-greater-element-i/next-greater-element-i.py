@@ -7,12 +7,7 @@ class Solution:
             while stack and stack[-1] <= num:
                 stack.pop()
             
-            if stack:
-                next_greater[num] = stack[-1]
-            else:
-                next_greater[num] = -1
-            
+            next_greater[num] = stack[-1] if stack else -1
             stack.append(num)
         
-        result = [next_greater[num] for num in nums1]
-        return result
+        return [next_greater[num] for num in nums1]
