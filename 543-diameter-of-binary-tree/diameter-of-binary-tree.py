@@ -14,6 +14,5 @@ class Solution:
             right_depth = depth(node.right)
             self.diameter = max(self.diameter, left_depth + right_depth)
             return 1 + max(left_depth, right_depth)
-        
         depth(root)
         return self.diameter
